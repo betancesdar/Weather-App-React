@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg')
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 127, 47, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 79, 4,0.7);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card_title{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+.card_subtitle{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 20px;
+     
+}
+
+.card_second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.second_list{
+ display: grid;
+ gap: 7px;   
+}
+.second_span{
+    color: black;
+    font-weight: bold;
+}
+.card_temp{
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card_btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: rgba(255, 79, 4,0.7);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
